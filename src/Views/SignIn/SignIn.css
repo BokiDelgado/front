@@ -1,0 +1,196 @@
+
+body, *, #root {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  /* Colores y fuente principal */
+:root {
+  --background-color: #F5F5F5;
+  --primary-color: #A1232C;
+  --input-background-color: #F3ACAC;
+  --accent-color: #A1232C; 
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url('./../../assets/font/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url('./../../assets/font/Montserrat-Bold.ttf') format('truetype');
+}
+
+
+.login__container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+/* Estilos del contenedor izquierdo */
+.login__left-container {
+  flex: 2; /* Hacemos más grande el contenedor del formulario */
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__form-cotainer {
+  width: 100%;
+  max-width: 600px; /* Máximo ancho para pantallas grandes */
+}
+
+.form__title {
+  color: var(--primary-color);
+  font-size: 2.5rem; /* Título grande */
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Montserrat Bold";
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--primary-color); /* Línea roja */
+  padding-bottom: 0.5rem;
+}
+
+.login__button-Google {
+  background-color: var(--input-background-color); /* Fondo rosa claro */
+  color: var(--primary-color); /* Texto rojo */
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1px;
+  text-align: center;
+}
+
+
+.login__button {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Ajustes al divisor con "O" */
+.login__alternative {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  color: var(--primary-color);
+}
+
+.alternative__line {
+  height: 2px;
+  width: 700px; /* Ancho igual a la línea superior */
+  background-color: var(--primary-color);
+  margin: 0 0.5rem;
+}
+
+.alternative__text {
+  font-size: 15px;
+  font-family: "Montserrat Bold";
+  color: var(--primary-color);
+}
+
+.login_email_error,
+.login_pass_error{
+  display: block;
+  color: #A1232C;
+  font-size: 15px;
+  font-family: "Montserrat";
+  margin-bottom: 5px;
+}
+
+
+.login_input_email{
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: #F3ACAC;
+  color: var(--primary-color); 
+}
+
+.login_input_pass {
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: #F3ACAC;
+  color: var(--primary-color); 
+}
+
+
+.login_role_selector{
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Montserrat";
+}
+
+
+  /* input[data-slot="base"] {
+    background-color: #F3ACAC;
+    color: var(--primary-color); 
+  }
+  */
+
+
+/*
+.login__input_email::placeholder,
+.login__input_pass::placeholder {
+  color: var(--primary-color); 
+} */
+
+.login__forgot-password {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  text-align: right;
+  margin-top: 0.2rem;
+}
+
+.login__dont-account {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.login__dont-account a {
+  color: var(--primary-color);
+  font-family: "Montserrat Bold";
+  text-decoration: none;
+}
+
+.login__dont-account a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Contenedor derecho */
+.login__right-container {
+  flex: 1.6; /* Más grande el contenedor alusivo */
+  background-color: var(--accent-color);
+}
+
+.login__right-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Responsivo */
+@media screen and (max-width: 800px) {
+  .login__container {
+    flex-direction: column;
+  }
+
+
+  
+  .login__right-container {
+    display: none;
+};
+};

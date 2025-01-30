@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('./../../assets/font/Montserrat-Regular.ttf') format("truetype");
+}
+
+.div_error{
+    background-color: #9b1a23;;
+    height: 100vh;
+    width: 100vw;
+    color: #FAF6F5;
+    font-family: Montserrat-Regular;
+}
+
+.error_title{
+    font-size: 300px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+.error_subtitle{
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.error_description{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
